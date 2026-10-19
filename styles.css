@@ -1,0 +1,865 @@
+:root {
+    --paper: #f4f0e8;
+    padding: 0 7% 78px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+@font-face {
+  font-family: 'Caveat';
+  src: url('fonts/Caveat/Caveat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Caveat';
+  src: url('fonts/Caveat/Caveat-Medium.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('fonts/Overpass/Overpass-Light.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 25px;
+}
+
+body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Overpass';
+    font-size: 20px;
+   
+}
+
+.intro__title {
+    font-family: 'Caveat';
+    font-size: 98px;
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    color: forestgreen;
+    text-decoration: underline;
+}
+
+.intro__about {
+  
+    display: flex;
+    flex-direction: row;
+ justify-content: space-between;
+ border-bottom: 2px solid #777 ;
+}
+
+.scissors {
+width: 90px;
+transform: scale(-1, 1);
+padding: 0;
+}
+
+.subtitle{
+    font-family: 'Caveat';
+    font-size: 52px;
+    display: flex;
+    flex-direction: row;
+
+}
+.intro__photo {
+    width: 100px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.list__header {
+    font-family: 'Caveat';
+    font-size: 28px;
+    margin-bottom: 0;
+
+}
+.intro__text{
+    width: 70%;
+    margin: 30px;
+}
+
+.intro__author {
+    margin-top: 2%;
+    margin-bottom: 0;
+    font-size: smaller;
+ 
+}
+
+.intro__about-name {
+    margin: 7px 0;
+    padding: 0;
+}
+
+.intro__about-discription{
+    margin: 0;
+    padding: 0;
+}
+
+.article__content_table {
+    display: flex;
+    flex-direction: column;
+}
+
+.article__content_table-name{
+    font-size: 22px;
+    margin: 0;
+    font-family: 'Overpass';
+    font-weight: 400;
+
+}
+
+.article__content_sites {
+    display: flex;
+    flex-direction: row;
+}
+
+.article__content-img {
+    max-width: 30%;
+}
+
+.article__content_table {
+ list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.article-content_mistakes {
+    display: flex;
+}
+
+.article__section_rule {
+    display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 15px;
+}
+
+.article__section-steps {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.article__section-step {
+    width: 100%;
+
+  object-fit: cover;
+}
+.brand {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 10px;
+    letter-spacing: .16em;
+    font-weight: 700;
+    white-space: nowrap
+}
+
+.brand-mark {
+    color: var(--accent);
+    font-size: 20px
+}
+
+
+
+.intro {
+    display: flex;
+    padding-top: 50px;
+    flex-direction: column;
+}
+
+
+h1,
+h2 {
+    margin: 0;
+    font-family: var(--serif);
+    font-weight: 400;
+    letter-spacing: -.035em
+}
+
+h1 {
+    font-size: clamp(42px, 5.5vw, 72px);
+    line-height: 1.08
+}
+
+h1 em,
+h2 em {
+    color: var(--accent);
+    font-weight: 400
+}
+
+.intro-text {
+    max-width: 650px;
+    margin: 22px 0;
+    color: #625e56;
+    font-size: 13px
+}
+
+.intro-side {
+    align-self: center;
+    position: relative;
+    min-height: 250px;
+    padding: 26px 0 0 34px;
+    border-left: 1px solid var(--line)
+}
+
+
+
+.intro-side>p {
+    color: var(--muted);
+    font: 18px/1.45 var(--serif)
+}
+
+.coordinates {
+    display: block;
+    margin-top: 28px;
+    color: #91887b;
+    font-size: 8px;
+    letter-spacing: .14em
+}
+
+.map-section {
+    padding: 76px 6% 88px
+}
+
+.map-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 30px
+}
+
+
+
+
+.article__section {
+    display: flex;
+   flex-direction: column;
+   padding: 20px 20px;
+}
+
+.step1 {
+    display: flex;
+  flex-direction: row;
+}
+
+.step1__text {
+   margin-right: 30px;
+   width: 60%;
+}
+.step1__img {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    line-height: 0;
+}
+.sewing-catalog {
+    position: relative;
+    width: 40%;
+}
+.sewing-image {
+    display: block;
+    height: auto;
+  }
+
+  .tip {
+    background-color: rgb(104, 146, 104);
+    border-radius: 20px;
+    padding: 20px;
+    font-family: 'Caveat';
+    
+  }
+  /* Точки товаров */
+  .hotspot {
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: rgb(104, 146, 104);
+    box-shadow: 0 2px 10px #0004;
+    cursor: pointer;
+    line-height: normal;
+    transition: transform 0.2s, background 0.2s;
+  }
+
+  .hotspot::before {
+    content: "";
+    position: absolute;
+    inset: -6px;
+    border: 1px solid #fff9;
+    border-radius: 50%;
+  }
+
+  .hotspot:hover,
+  .hotspot:focus-visible,
+  .hotspot.active {
+    background: #604153;
+    transform: translate(-50%, -50%) scale(1.15);
+    outline: none;
+  }
+
+  /* Всплывающая карточка товара */
+  .tooltip {
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 13px);
+    transform: translate(-50%, 5px);
+    width: max-content;
+    max-width: min(240px, 75vw);
+    padding: 12px 15px;
+    border-radius: 9px;
+    background: #fff;
+    color: #30252b;
+    box-shadow: 0 5px 25px #0003;
+    text-align: left;
+    line-height: 1.4;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s, transform 0.2s;
+  }
+
+  .tooltip::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: 7px solid transparent;
+    border-top-color: #fff;
+  }
+
+  .hotspot:hover .tooltip,
+  .hotspot:focus-visible .tooltip,
+  .hotspot.active .tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+  }
+
+  .product-name {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .product-price {
+    display: block;
+    color: rgb(104, 146, 104);
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .catalog-caption {
+    margin-top: 12px;
+    color: #777;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .hotspot {
+      width: 24px;
+      height: 24px;
+    }
+
+  .sewing-catalog {
+    width: 100%;
+  }
+
+.step1__img {
+    max-width: 100%;
+    margin: 0;
+    padding: 0%;
+  
+}
+    .tooltip {
+      padding: 9px 11px;
+    }
+
+    .product-name {
+      font-size: 12px;
+    }
+
+    .product-price {
+      font-size: 16px;
+    }
+  }
+
+.article-number {
+    color: var(--accent);
+    font-size: 10px;
+    letter-spacing: .13em;
+    font-weight: 700
+}
+
+.article-number span {
+    display: block;
+    margin-top: 8px;
+    color: #a29a8e;
+    font-size: 8px
+}
+
+.article-content {
+    max-width: 760px
+}
+
+.article-content h2 {
+    margin: -8px 0 23px;
+    font-size: clamp(31px, 3.5vw, 43px);
+    line-height: 1.15
+}
+
+.article-content h3 {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.35
+}
+
+.article-content>p {
+    color: #5f5b53;
+    font-size: 13px
+}
+
+
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    
+}
+
+.sources {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sources__photo {
+    max-width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.step5 {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #777 ;
+}
+
+.tip__img {
+    max-width: 40%;
+}
+
+.step5__text {
+    flex-direction: column;
+}
+@media(max-width:900px) {
+    .intro {
+        padding: 0;
+        gap: 0;
+    }
+
+    .tip__img {
+        display: none;
+    }
+
+    .article__section {
+        flex-direction: column;
+
+    }
+
+    .article__section_rule {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.article__section-steps {
+     display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+.intro__about {
+display: flex;
+flex-direction: column;
+margin: 0;
+padding: 0;
+}
+
+
+
+.intro__author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.intro__photo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.intro__author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.intro__photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.intro__author_mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.intro__about-name,
+.intro__about-discription {
+    margin: 0;
+    padding: 0;
+}
+.intro__text {
+    margin: 0;
+    width: 100%;
+}
+    .intro__title {
+     font-size: 48px;
+    }
+
+    .subtitle {
+        font-size: 28px;
+    
+    }
+    .scissors {
+        max-width: 30px;
+    }
+
+.body{
+    font-size: 18px;
+}
+
+.step1{
+    flex-direction: column;
+    margin-top: 20px;
+}
+.step1__text {
+   margin-right: 0;
+   width: 100%;
+}
+
+    .route-map {
+        min-height: 1260px
+    }
+
+    .map-card {
+        width: 31%;
+        padding: 18px
+    }
+
+    .card-1 {
+        left: 0;
+        top: 2%
+    }
+
+    .card-2 {
+        left: 35%;
+        top: 2%
+    }
+
+    .card-3 {
+        left: 68%;
+        top: 19%
+    }
+
+    .card-4 {
+        left: 0;
+        top: 39%
+    }
+
+    .card-5 {
+        left: 35%;
+        top: 58%
+    }
+
+    .card-6 {
+        left: 66%;
+        top: 75%;
+        width: 33%
+    }
+
+    .map-note {
+        width: 25%
+    }
+
+    .note-a {
+        left: 38%;
+        top: 23%
+    }
+
+    .note-b {
+        left: 38%;
+        top: 43%
+    }
+
+    .article-section {
+        padding: 65px 7%;
+        gap: 5%
+    }
+}
+
+@media(max-width:620px) {
+    .topbar {
+        height: 60px;
+        padding: 0 5%
+    }
+
+    .topbar-note {
+        display: none
+    }
+
+    .intro {
+        display: block;
+        padding: 50px 6%
+    }
+
+    .intro-side {
+        min-height: 180px;
+        margin-top: 35px;
+        padding-left: 20px
+    }
+
+    .route-preview {
+        margin-top: 48px
+    }
+
+    .map-section {
+        padding: 50px 5%
+    }
+
+    .map-heading {
+        display: block
+    }
+
+    .map-heading h2 {
+        font-size: 35px
+    }
+
+    .map-instruction {
+        margin-top: 17px
+    }
+
+    .route-map {
+        min-height: 0;
+        padding: 0 0 0 27px
+    }
+
+    .route-lines {
+        display: none
+    }
+
+    .route-map::before {
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 20px;
+        bottom: 115px;
+        width: 1px;
+        background: repeating-linear-gradient(to bottom, var(--accent) 0 5px, transparent 5px 11px)
+    }
+
+    .map-card,
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4,
+    .card-5,
+    .card-6 {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 100%;
+        min-height: 0;
+        margin: 0 0 25px;
+        padding: 20px
+    }
+
+    .map-card::before {
+        content: "";
+        position: absolute;
+        left: -23px;
+        top: 33px;
+        width: 12px;
+        height: 12px;
+        border: 1px solid var(--accent);
+        border-radius: 50%;
+        background: var(--paper)
+    }
+
+    .map-card:not(.card-6)::after {
+        content: "↓";
+        position: absolute;
+        bottom: -24px;
+        left: -28px;
+        color: var(--accent);
+        font-size: 16px
+    }
+
+    .map-card h3 {
+        font-size: 27px
+    }
+
+    .sources__photo {
+    max-width: 100%;
+}
+    .map-card>p {
+        min-height: 0
+    }
+
+    .map-note {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: calc(100% - 12px);
+        margin: -5px 0 24px 12px;
+        padding: 10px 13px
+    }
+
+    .note-b {
+        margin-top: -4px
+    }
+
+    .map-finish {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        margin: 4px 0 0
+    }
+
+    .map-compass {
+        display: none
+    }
+
+    .article-section {
+        display: block;
+        padding: 48px 6%
+    }
+
+    .article-number {
+        margin-bottom: 24px
+    }
+
+    .article-content h2 {
+        font-size: 34px
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .tool {
+        min-height: 138px;
+        padding: 11px
+    }
+
+    .sewing-sequence {
+        grid-template-columns: 1fr
+    }
+
+    .sequence-item {
+        min-height: 0
+    }
+
+    .progression {
+        align-items: stretch;
+        flex-direction: column
+    }
+
+    .progress-arrow {
+        align-self: center;
+        transform: rotate(90deg)
+    }
+
+    .time-note {
+        grid-template-columns: 1fr;
+        gap: 5px
+    }
+
+    .final-section {
+        padding: 52px 6%
+    }
+
+    .final-section h2 {
+        font-size: 44px
+    }
+
+    .wardrobe-option {
+        grid-template-columns: 1fr 1.1fr 18px;
+        gap: 8px
+    }
+
+    .wardrobe-option b {
+        font-size: 16px
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        padding: 22px 6%
+    }
+
+    .footer p {
+        order: 3;
+        flex-basis: 100%
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    html {
+        scroll-behavior: auto
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: .01ms !important
+    }
+}
